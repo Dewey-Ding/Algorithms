@@ -5,6 +5,10 @@ package util;
  * @date ${time}
  */
 public class CommonUtil {
+    /**
+     * 打印二维数组
+     * @param nums
+     */
     public static void printArray(int[][] nums){
         if(nums==null||nums.length==0||nums[0].length==0){
             return;
@@ -16,4 +20,5 @@ public class CommonUtil {
             System.out.println();
         }
     }
+
 }
