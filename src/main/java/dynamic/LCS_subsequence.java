@@ -86,6 +86,8 @@ public class LCS_subsequence {
         if(row<=0||column<=0){
             String string = temp.reverse().toString();
             result.add(string);
+            //反转回来防止后续计算出现错误
+            temp.reverse();
         }else{
             if(str1.charAt(row-1)==str2.charAt(column-1)){
                 temp.append(str1.charAt(row-1));
